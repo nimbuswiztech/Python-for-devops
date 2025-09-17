@@ -3,7 +3,7 @@
 ## Overview
 This demo covers Day 5 of the Python for DevOps series, focusing on command line arguments and environment variables - essential concepts for DevOps engineers.
 
-## What We Learnet (Recap)
+## What We Learnt (Recap)
 - Functions in Python
 - Modules and packages
 - Installing modules from PyPI using pip
