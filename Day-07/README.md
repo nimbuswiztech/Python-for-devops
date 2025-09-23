@@ -67,3 +67,52 @@ if x > 5:
 else:
     print("x is not greater than 5")
 ```
+## Best practices 
+
+## 1. use descriptive values 
+
+# Good
+instance_type = sys.argv[1]
+if instance_type == "t2.micro":
+    print("Micro instance selected")
+
+# Avoid
+t = sys.argv[1]
+if t == "t2.micro":
+    print("Micro instance selected")
+
+## 2. Handle the edge cases 
+
+if condition1:
+    # Handle condition1
+elif condition2:
+    # Handle condition2
+
+
+## 3. keep conditions readable and simple 
+
+# Good
+if server_status == "running" and cpu_usage < 80:
+    print("Server is healthy")
+
+# Less readable
+if server_status == "running" and cpu_usage < 80 and memory_usage < 90 and disk_usage < 85:
+    print("Server is healthy")
+
+
+Interview Questions & Concepts
+Q1: What's the difference between = and == in Python?
+
+Q2: Can you have multiple conditions in a single if statement?
+
+    if instance_type == "t2.micro" and region == "us-east-1":
+        print("Valid configuration")
+
+Q3: What happens if none of the conditions in if-elif chain are met?
+
+Conditional handling is essential for:
+
+Decision Making: Execute different code paths based on conditions
+Validation: Check user inputs and system states
+Error Handling: Manage different scenarios gracefully
+DevOps Automation: Create intelligent scripts that adapt to different environments
